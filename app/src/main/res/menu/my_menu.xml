@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schimas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.neliry.db_sql.MainActivity"
+    >
+<!--<item-->
+    <!--android:id="@+id/action_settings"-->
+    <!--android:title="Settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:icon="@drawable/menu_icon"-->
+    <!--app:showAsAction="never"-->
+    <!--/>-->
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/menu_i"
+        android:orderInCategory="200"
+        android:title="@string/action_settings"
+        app:showAsAction="always" >
+        <menu>
+
+            <item android:id="@+id/action_menu1"
+
+                android:title="Новий розділ" />
+
+            <item android:id="@+id/action_menu2"
+
+                android:title="Видалити все" />
+
+        </menu>
+    </item>
+
+
+</menu>

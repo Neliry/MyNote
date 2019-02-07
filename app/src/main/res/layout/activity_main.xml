@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.neliry.db_sql.MainActivity"
+    android:theme="@style/AppTheme">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#edededed">
+        <include
+            android:id="@+id/my_toolbar"
+            layout="@layout/toolbar" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_toolbar"
+            android:fillViewport="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/chapters"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Розділи"
+                            android:paddingLeft="10dp"/>
+                        <ListView
+                                android:id="@+id/main_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="@null"
+                                android:dividerHeight="0dp"
+                            android:longClickable="true"
+                            android:layout_marginTop="10dip"
+                            >
+                            </ListView>
+                        <TextView
+                            android:id="@+id/pages"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Сторінки"
+                            android:layout_marginTop="10dip"
+                            android:paddingLeft="10dp"/>
+                        <ListView
+                            android:id="@+id/page_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            android:longClickable="true"
+                            android:layout_marginTop="10dip">
+                        </ListView>
+                    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_24dp"
+        app:backgroundTint="@color/accent"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+</FrameLayout>

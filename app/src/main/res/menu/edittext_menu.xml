@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schimas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.neliry.db_sql.Edittext">
+    <item
+        android:id="@+id/action_menu"
+        android:icon="@drawable/ic_edito_menu"
+        android:orderInCategory="200"
+        android:title="@string/action_settings"
+        app:showAsAction="always"
+        >
+        <menu>
+
+            <item android:id="@+id/action_menu1"
+
+                android:title="title 1" />
+
+            <item android:id="@+id/action_menu2"
+
+                android:title="title 2" />
+
+        </menu>
+    </item>
+</menu>
